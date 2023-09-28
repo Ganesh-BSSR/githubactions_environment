@@ -21,6 +21,7 @@ jobs:
   prod-env:
     environment: production
     env:
+      PORT: ${{vars.PORT}}
       DATABASE_NAME: ${{secrets.DATABASE_NAME}}
       DATABASE_USERNAME: ${{secrets.DATABASE_USERNAME}}
       DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
