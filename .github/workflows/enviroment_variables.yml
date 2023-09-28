@@ -7,6 +7,7 @@ jobs:
       DATABASE_NAME: ${{secrets.DATABASE_NAME}}
       DATABASE_USERNAME: ${{secrets.DATABASE_USERNAME}}
       DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
+      PORT: ${{vars.PORT}}
     runs-on: ubuntu-latest
     steps:
       - name: Get code
